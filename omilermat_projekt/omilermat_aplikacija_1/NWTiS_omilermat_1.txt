@@ -1,0 +1,8 @@
+#NWTiS omilermat 2023.
+#Sun Apr 02 13:51:56 CEST 2023
+brojCekaca = 5
+brojRadnika = 10
+mreznaVrata=8000
+adresa=localhost
+
+
