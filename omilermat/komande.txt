@@ -1,0 +1,26 @@
+#PAYARA FULL
+cd /opt/payara-full-6.2023.4/glassfish/bin
+./asadmin start-domain
+
+tail -f /opt/payara-full-6.2023.4/glassfish/domains/domain1/logs/server.log
+
+#BAZA - LOKALNO
+cd /opt/hsqldb-2.7.1/hsqldb/data
+sudo java -classpath ../lib/hsqldb.jar org.hsqldb.server.Server \
+--database.0 file:nwtis_2 --dbname.0 nwtis_2 --port 9001
+
+---------------------------------------------------------------------------------------------
+
+
+#APLIKACIJA_1 - pokretanje app_1
+java -jar target/omilermat_aplikacija_1-1.0.0.jar NWTiS_omilermat_1.txt
+
+#APLIKACIJA_2 
+#Docker-logs
+cd omilermat/omilermat_projekt/omilermat_aplikacija_2 		docker logs --follow omilermat_payara_micro
+
+#Za pokretanje/REDEPLOY APLIKACIJE_2:
+cd omilermat/omilermat_projekt/omilermat_aplikacija_2$ ./scripts/obrisiPripremiPokreni.sh
+
+#BAZA - DOCKER
+cd omilermat/omilermat_projekt$ ./scripts/pokreniSliku.sh 
