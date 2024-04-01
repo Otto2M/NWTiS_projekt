@@ -1,0 +1,5 @@
+adresa=200.20.0.1
+mreznaVrata=8000
+OpenSkyNetwork.korisnik=omilermat
+OpenSkyNetwork.lozinka=nwtis-6eba41
+
