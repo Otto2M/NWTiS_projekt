@@ -1,0 +1,19 @@
+server.database=jdbc:hsqldb:hsql://localhost:9001/
+admin.username=SA
+admin.password=
+admin.database=nwtis_2
+user.username=nwtis_2
+user.password=nwtis#2
+user.database=nwtis_2
+jdbc.mysql=com.mysql.jdbc.Driver
+jdbc.derby=org.apache.derby.jdbc.ClientDriver
+jdbc.hsqldb.hsql=org.hsqldb.jdbcDriver
+stranica.brojRedova=15
+autor.ime=Otto
+autor.prezime=Miler Matulin
+autor.predmet=NWTiS
+aplikacija.godina=2023.
+aplikacija.verzija=1.23
+adresa=localhost
+mreznaVrata=8000
+
