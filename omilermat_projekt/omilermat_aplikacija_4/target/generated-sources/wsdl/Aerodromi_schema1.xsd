@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.projekt.omilermat.nwtis.foi.org/" xmlns:tns="http://ws.projekt.omilermat.nwtis.foi.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="PogresnaAutentikacija" type="tns:PogresnaAutentikacija"/>
+
+  <xs:element name="aktivirajAerodromZaLetove" type="tns:aktivirajAerodromZaLetove"/>
+
+  <xs:element name="aktivirajAerodromZaLetoveResponse" type="tns:aktivirajAerodromZaLetoveResponse"/>
+
+  <xs:element name="dajAerodromeStatus" type="tns:dajAerodromeStatus"/>
+
+  <xs:element name="dajAerodromeStatusResponse" type="tns:dajAerodromeStatusResponse"/>
+
+  <xs:element name="dajAerodromeZaLetove" type="tns:dajAerodromeZaLetove"/>
+
+  <xs:element name="dajAerodromeZaLetoveResponse" type="tns:dajAerodromeZaLetoveResponse"/>
+
+  <xs:element name="dodajAerodromZaLetove" type="tns:dodajAerodromZaLetove"/>
+
+  <xs:element name="dodajAerodromZaLetoveResponse" type="tns:dodajAerodromZaLetoveResponse"/>
+
+  <xs:element name="pauzirajAerodromZaLetove" type="tns:pauzirajAerodromZaLetove"/>
+
+  <xs:element name="pauzirajAerodromZaLetoveResponse" type="tns:pauzirajAerodromZaLetoveResponse"/>
+
+  <xs:complexType name="dajAerodromeStatus">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="dajAerodromeStatusResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dodajAerodromZaLetove">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg1" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg2" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dodajAerodromZaLetoveResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PogresnaAutentikacija">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aktivirajAerodromZaLetove">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg1" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg2" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aktivirajAerodromZaLetoveResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dajAerodromeZaLetove">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg1" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dajAerodromeZaLetoveResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:aerodrom" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aerodrom">
+    <xs:sequence>
+      <xs:element name="drzava" type="xs:string" minOccurs="0"/>
+      <xs:element name="icao" type="xs:string" minOccurs="0"/>
+      <xs:element name="lokacija" type="tns:lokacija" minOccurs="0"/>
+      <xs:element name="naziv" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="lokacija">
+    <xs:sequence>
+      <xs:element name="latitude" type="xs:string" minOccurs="0"/>
+      <xs:element name="longitude" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="pauzirajAerodromZaLetove">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg1" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg2" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="pauzirajAerodromZaLetoveResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

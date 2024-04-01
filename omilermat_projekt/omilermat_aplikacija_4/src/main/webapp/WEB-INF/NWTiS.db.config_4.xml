@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>NWTIS konfiguracija</comment>
+<entry key="server.database">jdbc:hsqldb:hsql://localhost:9001/</entry>
+<entry key="admin.username">SA</entry>
+<entry key="admin.password"/>
+<entry key="admin.database">nwtis_2</entry>
+<entry key="user.username">nwtis_2</entry>
+<entry key="user.password">nwtis#2</entry>
+<entry key="user.database">nwtis_2</entry>
+<entry key="jdbc.mysql">com.mysql.jdbc.Driver</entry>
+<entry key="jdbc.derby">org.apache.derby.jdbc.ClientDriver</entry>
+<entry key="jdbc.hsqldb.hsql">org.hsqldb.jdbcDriver</entry>
+<entry key="OpenSkyNetwork.korisnik">omilermat</entry>
+<entry key="OpenSkyNetwork.lozinka">nwtis-6eba41</entry>
+<entry key="OpenWeatherMap.apikey">506d5d5857a39eacabdc630a2caf6fd7</entry>
+<entry key="LocationIQ.apikey">pk.72723842110287f0605e0c57b58f2f22</entry>
+<entry key="adresa">localhost</entry>
+<entry key="mreznaVrata">8000</entry>
+</properties>

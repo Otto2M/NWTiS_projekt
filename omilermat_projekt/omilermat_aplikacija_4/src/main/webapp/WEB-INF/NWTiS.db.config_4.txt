@@ -1,0 +1,18 @@
+#NWTiS omilermat 2023.
+#Wed May 24 18:39:25 CEST 2023
+server.database=jdbc:hsqldb:hsql://localhost:9001/
+admin.username=SA
+admin.password
+admin.database=nwtis_2
+user.username=nwtis_2
+user.password=nwtis#2
+user.database=nwtis_2
+jdbc.mysql=com.mysql.jdbc.Driver
+jdbc.derby=org.apache.derby.jdbc.ClientDriver
+jdbc.hsqldb.hsql=org.hsqldb.jdbcDriver
+adresa=localhost
+mreznaVrata=8000
+OpenSkyNetwork.korisnik=omilermat
+OpenSkyNetwork.lozinka=nwtis-6eba41
+OpenWeatherMap.apikey=506d5d5857a39eacabdc630a2caf6fd7
+LocationIQ.apikey=pk.72723842110287f0605e0c57b58f2f22
